@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NQABS Built-ins Services | Custom Built-In Furniture</title>
+<meta name="description" content="NQABS Built-ins Services is a joinery studio creating tailored storage and furniture: kitchens, wardrobes, TV units and more, shaped around how you actually live.">
+<meta name="author" content="Asande Mbhense">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+/* Image fallback: each <img> tries its local file first (your Higgsfield renders),
+   then the stock photo in data-fb. Drop files into /assets and refresh. */
+function fb(i){var f=i.dataset.fb;if(f){i.removeAttribute('data-fb');i.src=f}else{i.style.opacity=0}}
+</script>
+</head>
+<body>
+
+<!-- ============ FIXED CINEMATIC STAGE (chapters I-V) ============ -->
+<div class="scenes" aria-hidden="true">
+  <div class="scene"><img src="assets/scenes/scene-1.jpg" data-fb="https://images.unsplash.com/photo-1672137233327-37b0c1049e77?q=80&w=1800&auto=format&fit=crop" alt="" onerror="fb(this)"></div>
+  <div class="scene"><img src="assets/scenes/scene-2.jpg" data-fb="https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?q=80&w=1800&auto=format&fit=crop" alt="" onerror="fb(this)"></div>
+  <div class="scene"><img src="assets/scenes/scene-3.jpg" data-fb="https://images.unsplash.com/photo-1722605090433-41d1183a792d?q=80&w=1800&auto=format&fit=crop" alt="" onerror="fb(this)"></div>
+  <div class="scene"><img src="assets/scenes/scene-4.jpg" data-fb="https://images.unsplash.com/photo-1618236444721-4a8dba415c15?q=80&w=1800&auto=format&fit=crop" alt="" onerror="fb(this)"></div>
+  <div class="scene"><img src="assets/scenes/scene-5.jpg" data-fb="https://images.unsplash.com/photo-1640357154220-9775b0f31dec?q=80&w=1800&auto=format&fit=crop" alt="" onerror="fb(this)"></div>
+</div>
+<canvas id="dust" aria-hidden="true"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<div class="progress" id="progress" aria-hidden="true"><span id="pg-n">01</span><i><b id="pg-bar"></b></i><span>05</span></div>
+
+<header class="topbar" id="topbar">
+  <a href="#hero" class="brand">NQABS</a>
+  <button class="menu-btn" aria-label="Menu" aria-expanded="false"><i></i><i></i></button>
+  <nav class="links" id="topnav">
+    <a href="#about">About</a>
+    <a href="#portfolio">Work</a>
+    <a href="#why-choose-us">Why NQABS</a>
+    <a href="#process">Process</a>
+    <a href="#faq">FAQ</a>
+    <a href="#booking-form" class="cta-link">Book Now</a>
+  </nav>
+</header>
+
+<!-- ============ CINEMATIC SEQUENCE ============ -->
+<main id="story">
+
+  <section id="hero" class="panel hero">
+    <div class="copy">
+      <p class="eyebrow">Joinery studio &middot; Since 2010</p>
+      <h1>CUSTOM.<br><em>Crafted</em>.<br>BUILT&#8209;INS.</h1>
+      <p class="lede">NQABS Built-ins Services is a joinery studio creating tailored storage and furniture, shaped around how you actually live.</p>
+      <a href="#booking-form" class="cta-arrow">Book a Consultation <span>&rarr;</span></a>
+    </div>
+    <div class="scroll-cue"><span>Scroll</span><i></i></div>
+  </section>
+
+  <section id="s-cabinetry" class="panel">
+    <div class="copy">
+      <p class="eyebrow">01 / The Cabinetry</p>
+      <h2>Cut to the room, <em>not the catalogue</em></h2>
+      <p>We work in solid timber and premium boards, cut and assembled to the exact dimensions of your room. Every piece is built to your walls, your corners and your light.</p>
+    </div>
+  </section>
+
+  <section id="s-materials" class="panel">
+    <div class="copy">
+      <p class="eyebrow">02 / The Materials</p>
+      <h2>Honest timber, <em>chosen with you</em></h2>
+      <p>Timber, boards and finishes are chosen together during the design phase, so what lands in your home is exactly what you pictured.</p>
+    </div>
+  </section>
+
+  <section id="s-design" class="panel">
+    <div class="copy">
+      <p class="eyebrow">03 / The Design</p>
+      <h2>Seen before <em>it is built</em></h2>
+      <p>We measure twice, model your space in 3D and build once. Every project starts with a conversation, not a catalogue.</p>
+    </div>
+  </section>
+
+  <section id="s-fit" class="panel">
+    <div class="copy">
+      <p class="eyebrow">04 / The Fit</p>
+      <h2>Fitted, finished, <em>on time</em></h2>
+      <p>Professional installation, a final quality inspection and a 10-year warranty on every custom built-in, delivered within the agreed timeframe.</p>
+      <a href="#booking-form" class="cta-arrow">Start your project <span>&rarr;</span></a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ ABOUT / MANIFESTO ============ -->
+<section id="about" class="block about">
+  <div class="wrap about-grid">
+    <div class="about-img reveal"><img src="assets/work/studio.jpg" data-fb="https://images.unsplash.com/photo-1721044168675-b577e899413d?q=80&w=1200&auto=format&fit=crop" alt="Custom built-in wardrobe with white cabinetry" loading="lazy" onerror="fb(this)"></div>
+    <div class="about-copy">
+      <p class="eyebrow reveal">About the Studio</p>
+      <h2 class="reveal">Furniture built <em>around</em> your space, not the other way around.</h2>
+      <p class="reveal">Since 2010, NQABS Built-ins Services has designed and hand-fitted joinery for homes across the region: kitchens, wardrobes, media units, and everything in between. We work in solid timber and premium boards, cut and assembled to the exact dimensions of your room.</p>
+      <p class="reveal">Every project starts with a conversation, not a catalogue. We measure twice, model the space in 3D, and build once, so what lands in your home is exactly what you pictured.</p>
+      <div class="stats reveal">
+        <div><b data-count="15" data-suffix="+">15+</b><span>Years Crafting</span></div>
+        <div><b data-count="400" data-suffix="+">400+</b><span>Homes Fitted</span></div>
+        <div><b data-count="10" data-suffix="yr">10yr</b><span>Warranty</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORK / PORTFOLIO ============ -->
+<section id="portfolio" class="block work">
+  <div class="wrap">
+    <div class="block-head reveal">
+      <p class="eyebrow">Selected Work</p>
+      <h2>Our featured <em>projects</em></h2>
+    </div>
+    <div class="work-grid" id="workGrid">
+      <article class="p-card" data-name="Kitchen Cupboards" data-tag="#KitchenDesign">
+        <button type="button" aria-label="View Kitchen Cupboards"><img src="assets/work/kitchen-cupboards.jpg" data-fb="https://images.unsplash.com/photo-1622372738946-62e02505feb3?q=80&w=1200&auto=format&fit=crop" alt="Custom kitchen cabinetry" loading="lazy" onerror="fb(this)"><span class="cap"><small>#KitchenDesign</small><h3>Kitchen Cupboards</h3></span></button>
+      </article>
+      <article class="p-card" data-name="Walk-in Wardrobe" data-tag="#WardrobeDesign">
+        <button type="button" aria-label="View Walk-in Wardrobe"><img src="assets/work/walk-in-wardrobe.jpg" data-fb="https://images.unsplash.com/photo-1640357154220-9775b0f31dec?q=80&w=1200&auto=format&fit=crop" alt="Walk-in wardrobe with drawers" loading="lazy" onerror="fb(this)"><span class="cap"><small>#WardrobeDesign</small><h3>Walk-in Wardrobe</h3></span></button>
+      </article>
+      <article class="p-card" data-name="TV Stands" data-tag="#EntertainmentUnit">
+        <button type="button" aria-label="View TV Stands"><img src="assets/work/tv-stands.jpg" data-fb="https://images.unsplash.com/photo-1662454419622-a41092ecd245?q=80&w=1200&auto=format&fit=crop" alt="Floating TV entertainment unit" loading="lazy" onerror="fb(this)"><span class="cap"><small>#EntertainmentUnit</small><h3>TV Stands</h3></span></button>
+      </article>
+      <article class="p-card" data-name="Floating Beds" data-tag="#FloatingBed">
+        <button type="button" aria-label="View Floating Beds"><img src="assets/work/floating-beds.jpg" data-fb="https://images.unsplash.com/photo-1632119289059-793dd347950f?q=80&w=1200&auto=format&fit=crop" alt="Minimal bedroom with built-in bed" loading="lazy" onerror="fb(this)"><span class="cap"><small>#FloatingBed</small><h3>Floating Beds</h3></span></button>
+      </article>
+      <article class="p-card" data-name="Shoe Racks" data-tag="#ShoeStorage">
+        <button type="button" aria-label="View Shoe Racks"><img src="assets/work/shoe-racks.jpg" data-fb="https://images.unsplash.com/photo-1721739224993-f6fcdec51d1d?q=80&w=1200&auto=format&fit=crop" alt="Built-in shoe storage closet" loading="lazy" onerror="fb(this)"><span class="cap"><small>#ShoeStorage</small><h3>Shoe Racks</h3></span></button>
+      </article>
+      <article class="p-card" data-name="Home Office Setup" data-tag="#HomeOffice">
+        <button type="button" aria-label="View Home Office Setup"><img src="assets/work/home-office.jpg" data-fb="https://images.unsplash.com/photo-1600210491188-be549f084855?q=80&w=1200&auto=format&fit=crop" alt="Built-in home office desk and shelving" loading="lazy" onerror="fb(this)"><span class="cap"><small>#HomeOffice</small><h3>Home Office Setup</h3></span></button>
+      </article>
+      <article class="p-card" data-name="Bookshelf Units" data-tag="#Library">
+        <button type="button" aria-label="View Bookshelf Units"><img src="assets/work/bookshelf-units.jpg" data-fb="https://images.unsplash.com/photo-1618236444721-4a8dba415c15?q=80&w=1200&auto=format&fit=crop" alt="Built-in bookshelf and library wall" loading="lazy" onerror="fb(this)"><span class="cap"><small>#Library</small><h3>Bookshelf Units</h3></span></button>
+      </article>
+      <article class="p-card" data-name="Walk-in Pantry" data-tag="#Pantry">
+        <button type="button" aria-label="View Walk-in Pantry"><img src="assets/work/walk-in-pantry.jpg" data-fb="https://images.unsplash.com/photo-1721742604452-87a1daf6f5c4?q=80&w=1200&auto=format&fit=crop" alt="Walk-in pantry with wooden shelving" loading="lazy" onerror="fb(this)"><span class="cap"><small>#Pantry</small><h3>Walk-in Pantry</h3></span></button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY CHOOSE ============ -->
+<section id="why-choose-us" class="block why">
+  <div class="wrap">
+    <div class="block-head reveal">
+      <p class="eyebrow">The Studio</p>
+      <h2>Why choose <em>NQABS</em></h2>
+      <p class="sub">The perfect blend of craftsmanship, innovation, and customer service.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why reveal"><span>01</span><h3>15+ Years Experience</h3><p>Bringing expertise and craftsmanship to every project since 2010.</p></div>
+      <div class="why reveal"><span>02</span><h3>Dedicated Support</h3><p>A personal project manager guides you through the entire process.</p></div>
+      <div class="why reveal"><span>03</span><h3>Quality Guarantee</h3><p>10-year warranty on all our custom built-in furniture installations.</p></div>
+      <div class="why reveal"><span>04</span><h3>Custom Design</h3><p>Tailored solutions that perfectly match your style and space.</p></div>
+      <div class="why reveal"><span>05</span><h3>Timely Delivery</h3><p>Project completion within agreed timeframes, guaranteed.</p></div>
+      <div class="why reveal"><span>06</span><h3>Competitive Pricing</h3><p>Transparent pricing with flexible payment options available.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section id="process" class="block process">
+  <div class="wrap">
+    <div class="block-head reveal">
+      <p class="eyebrow">Our Method</p>
+      <h2>Our design <em>process</em></h2>
+      <p class="sub">A comprehensive approach to ensure your custom built-in furniture matches your vision and needs.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><span>01</span><h3>Consultation</h3><p>Initial meeting to discuss your needs, style preferences, and space requirements.</p></div>
+      <div class="step reveal"><span>02</span><h3>Design</h3><p>Custom design creation with 3D visualisation and material selection.</p></div>
+      <div class="step reveal"><span>03</span><h3>Crafting</h3><p>Expert fabrication of your custom pieces using premium materials.</p></div>
+      <div class="step reveal"><span>04</span><h3>Installation</h3><p>Professional installation and final quality inspection.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOOKING ============ -->
+<section id="booking-form" class="block booking">
+  <div class="wrap">
+    <div class="booking-panel reveal">
+      <div class="form-side">
+        <h2>Book Your Consultation</h2>
+        <p class="kicker"><span data-fee>R1 000</span> consultation fee, fully credited toward your project.</p>
+        <form id="consultationForm" novalidate>
+          <h4>Personal Information</h4>
+          <div class="row">
+            <label>First Name<input type="text" name="firstName" required autocomplete="given-name"></label>
+            <label>Last Name<input type="text" name="lastName" required autocomplete="family-name"></label>
+          </div>
+          <label>Email Address<input type="email" name="email" required autocomplete="email"></label>
+          <label>Phone Number<input type="tel" name="phone" required autocomplete="tel"></label>
+          <h4>Project Details</h4>
+          <label>Service Type
+            <select name="service" required>
+              <option value="" disabled selected>Select a service</option>
+              <option>Built-in Kitchen Cupboards</option>
+              <option>Built-in Wardrobe</option>
+              <option>TV Stands</option>
+              <option>Floating Beds</option>
+              <option>Shoe Racks</option>
+              <option>Home Office Setup</option>
+              <option>Bookshelf Units</option>
+              <option>Walk-in Pantry</option>
+              <option>Other Custom Solutions</option>
+            </select>
+          </label>
+          <label>Project Description<textarea name="description" rows="3" placeholder="Tell us about your project requirements..."></textarea></label>
+          <h4>Preferred Date &amp; Time</h4>
+          <div class="row">
+            <label>Date<input type="date" name="date" id="bDate" required></label>
+            <label>Time<select name="time" id="bTime" required></select></label>
+          </div>
+          <label>Consultation type
+            <select name="mode"><option>On-site visit</option><option>Virtual (video call)</option></select>
+          </label>
+          <button type="submit" class="btn-solid">Book Consultation</button>
+          <p class="form-note" id="bookNote" role="status"></p>
+        </form>
+      </div>
+      <div class="info-side">
+        <h3>What to Expect</h3>
+        <div class="info-item"><b>Consultation Duration</b><p>Each consultation lasts approximately 60 minutes, giving us ample time to discuss your needs.</p></div>
+        <div class="info-item"><b>On-site or Virtual</b><p>Choose between an in-person visit to your space or a convenient virtual consultation.</p></div>
+        <div class="info-item"><b>Preparation</b><p>Have measurements, inspiration photos, and requirements ready for a productive session.</p></div>
+        <div class="info-item"><b>Consultation Fee</b><p><span data-fee>R1 000</span>, fully credited toward your project when you proceed with our services.</p></div>
+        <div class="info-contact">
+          <small>Need assistance?</small>
+          <a href="tel:+27735726119">073 572 6119</a>
+          <a href="mailto:njabuloasande43@gmail.com">njabuloasande43@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section id="testimonials" class="block quotes-sec">
+  <div class="wrap">
+    <div class="block-head reveal center">
+      <p class="eyebrow">Testimonials</p>
+      <h2>What our <em>clients</em> say</h2>
+    </div>
+    <div class="quotes reveal">
+      <blockquote class="quote active"><p>&ldquo;The consultation process was incredibly thorough. The designer came up with solutions I hadn&rsquo;t even considered for my kitchen storage. The result exceeded my expectations.&rdquo;</p><footer><i>R</i><div><b>Rebecca T.</b><span>Kitchen Renovation</span></div></footer></blockquote>
+      <blockquote class="quote"><p>&ldquo;I was hesitant about booking online, but it was seamless. The team was punctual and professional, and the built-in wardrobe transformed our bedroom completely.&rdquo;</p><footer><i>M</i><div><b>Michael C.</b><span>Bedroom Wardrobe</span></div></footer></blockquote>
+      <blockquote class="quote"><p>&ldquo;The virtual consultation suited my busy schedule perfectly. The 3D visualisation helped me understand exactly how my TV unit would look. Installation was efficient and spotless.&rdquo;</p><footer><i>O</i><div><b>Olivia M.</b><span>Entertainment Unit</span></div></footer></blockquote>
+      <div class="q-ctrl"><button class="q-prev" aria-label="Previous">&larr;</button><span class="q-dots"></span><button class="q-next" aria-label="Next">&rarr;</button></div>
+      <p class="sample-note">Sample testimonials shown as placeholders until verified client reviews are added.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq" class="block faq">
+  <div class="wrap narrow">
+    <div class="block-head reveal center">
+      <p class="eyebrow">Questions</p>
+      <h2>Frequently <em>asked</em></h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item"><button class="faq-toggle" aria-expanded="false"><span>What happens after I book a consultation?</span><i></i></button><div class="faq-content"><p>After booking, you&rsquo;ll receive a confirmation with details about your appointment. Our design consultant will contact you 24 hours before the scheduled time.</p></div></div>
+      <div class="faq-item"><button class="faq-toggle" aria-expanded="false"><span>Can I reschedule my consultation?</span><i></i></button><div class="faq-content"><p>Yes, you can reschedule up to 24 hours before your appointment without penalty. Contact our team to move your slot.</p></div></div>
+      <div class="faq-item"><button class="faq-toggle" aria-expanded="false"><span>Do you offer virtual consultations?</span><i></i></button><div class="faq-content"><p>Yes, both in-person and virtual consultations are available via video call, ideal for busy schedules or clients outside our service area.</p></div></div>
+      <div class="faq-item"><button class="faq-toggle" aria-expanded="false"><span>What should I prepare before the consultation?</span><i></i></button><div class="faq-content"><p>Room measurements, photos of the space, inspiration images, budget expectations, and a list of specific requirements you&rsquo;d like to address.</p></div></div>
+      <div class="faq-item"><button class="faq-toggle" aria-expanded="false"><span>When will I receive a design proposal?</span><i></i></button><div class="faq-content"><p>Typically within 5&ndash;7 business days after your consultation. Complex projects may take slightly longer, and we&rsquo;ll keep you informed throughout.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CLOSING CTA ============ -->
+<section class="closer">
+  <div class="wrap">
+    <p class="eyebrow">Ready when you are</p>
+    <h2>Built once. <em>Built properly.</em></h2>
+    <a href="#booking-form" class="btn-solid inline">Book a Consultation</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap foot-grid">
+    <div>
+      <a href="#hero" class="brand">NQABS</a>
+      <p>Transforming spaces with custom built-in furniture solutions since 2010.</p>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <a href="#portfolio">Built-in Kitchen Cupboards</a><a href="#portfolio">Built-in Wardrobe</a><a href="#portfolio">TV Stands</a><a href="#portfolio">Floating Beds</a><a href="#portfolio">Shoe Racks</a>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="#about">About Us</a><a href="#portfolio">Portfolio</a><a href="#process">Process</a><a href="#testimonials">Testimonials</a><a href="#faq">FAQs</a>
+    </div>
+    <div>
+      <h4>Contact Us</h4>
+      <a href="tel:+27735726119">073 572 6119</a>
+      <a href="mailto:njabuloasande43@gmail.com">njabuloasande43@gmail.com</a>
+      <span>Mon&ndash;Fri: 9AM&ndash;6PM</span>
+      <span>South Africa</span>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <p>&copy; <span id="yr">2026</span> NQABS BUILT-INS SERVICES. All rights reserved.</p>
+    <p class="credit">Site by <a href="https://asande-mbhense.vercel.app/" target="_blank" rel="noopener">Asande Mbhense</a></p>
+  </div>
+</footer>
+
+<!-- request-ready modal -->
+<div id="successModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+  <div class="modal-box">
+    <h3 id="mTitle">Request ready to send</h3>
+    <p>Your email app should now open with your consultation request filled in. Press send there and the studio will reply to confirm your slot.</p>
+    <div class="modal-details"><div id="confirmDate"></div><div id="confirmTime"></div></div>
+    <p class="note">Nothing is booked until the studio confirms. If your email app did not open, call 073 572 6119.</p>
+    <button id="closeModal" class="btn-solid">Close</button>
+  </div>
+</div>
+
+<!-- portfolio lightbox -->
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+  <button class="lb-close" aria-label="Close">&times;</button>
+  <button class="lb-nav lb-prev" aria-label="Previous">&larr;</button>
+  <button class="lb-nav lb-next" aria-label="Next">&rarr;</button>
+  <div class="lb-body">
+    <div class="lb-img"><img id="lb-img" alt=""></div>
+    <div class="lb-info">
+      <p class="eyebrow" id="lb-tag"></p>
+      <h3 id="lb-name"></h3>
+      <p>Built to the exact dimensions of your room, in solid timber and premium boards, with a 10-year warranty.</p>
+      <button class="btn-solid" id="lb-ask" type="button" data-ask="">Ask about this</button>
+      <a class="btn-line" href="#booking-form" id="lb-book">Book a Consultation</a>
+    </div>
+  </div>
+</div>
+
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/vendor/ScrollTrigger.min.js"></script>
+<script src="main.js"></script>
+<script src="chatbot.js"></script>
+</body>
+</html>
